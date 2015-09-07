@@ -1,0 +1,58 @@
+<!TYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Login Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    </head>
+<body>
+    <div class="content">
+        <div class="form">
+            <header>
+                <h3>- FORM -</h3>
+            </header>
+            <div class="form-wrap">
+                <p class="title">Login to your account</p>
+                <form action="">
+                <div class="login">
+                    <fieldset>
+                        <input type="email" name="email" placeholder="Email" required="required">
+                        <input type="password" name="password" placeholder="Password" id="password" required="required">
+                    </fieldset>
+                    <footer>
+                        <button type="submit" class="button">Login</button>
+                    </footer>
+                </div>
+                <div class="register">
+                    <fieldset>
+                        <div class="col-2">
+                            <input type="text" name="first name" placeholder="First Name" required="required">
+                        </div>
+                        <div class="col-2">
+                            <input type="text" name="last name" placeholder="Last Name" required="required">
+                        </div>
+                        <input type="email" name="email" placeholder="Email" required="required">
+                        <input type="password" name="password" placeholder="Password" id="password" required="required">
+                    </fieldset>
+                    <footer>
+                        <button type="submit" class="button">Register</button>
+                    </footer>
+                </div>
+                <div class="clear"></div>
+                <p class="no-login">Dont have an account? <a>REGISTER</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+  $( ".no-login a" ).click(function() {
+  $( ".register" ).slideToggle(600);
+  $( ".login" ).slideToggle(600);
+  $( ".content" ).toggleClass("acitve");
+});
+</script>
+</html>

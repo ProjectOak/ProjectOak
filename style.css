@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300);
+/* ---------- BASE ---------- */
+html, body {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #e2e2e2; }
+
+* {
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent; }
+
+/* ---------- COLORS ---------- */
+/* ---------- BORDER ---------- */
+/* ---------- LOGIN FORM ---------- */
+.content {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  left: 0%;
+  margin-left: 0px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15); }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  85% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.form {
+  -webkit-transition: height 0.25s linear;
+  transition: height 0.25s linear; }
+  .form .register {
+    display: none;
+    opacity: 1;
+    -webkit-animation: fade-in 0.8s linear;
+    animation: fade-in 0.8s linear; }
+  .form .login {
+    display: block;
+    opacity: 1;
+    -webkit-animation: fade-in 0.8s linear;
+    animation: fade-in 0.8s linear; }
+  .form header {
+    position: relative;
+    background: #2C3E50;
+    text-align: center;
+    padding: 25px 0 25px;
+    border-radius: 0px; }
+    .form header h3 {
+      letter-spacing: 10px;
+      margin: 0;
+      font: normal normal 200 1em/100% "Raleway", Helvetica, sans-serif;
+      color: #e2e2e2; }
+  .form .form-wrap {
+    text-align: center;
+    background: #f0f0f0;
+    border-radius: 0px; }
+  .form .no-login {
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
+    padding: 20px 0 20px; }
+  .form .no-login a,
+  .form .no-login a:link,
+  .form .no-login a:active {
+    color: #4183D7;
+    text-decoration: none; }
+  .form .no-login a:hover {
+    text-decoration: underline; }
+  .form .title {
+    margin: 0;
+    padding: 15px 0 0 0;
+    text-align: center;
+    font-weight: 300;
+    color: #252b33;
+    background-color: #f0f0f0; }
+  .form form {
+    margin: 0; }
+  .form fieldset {
+    margin-bottom: 15px;
+    padding: 20px 20px 0;
+    border: 0; }
+    .form fieldset input {
+      width: 100%;
+      height: 45px;
+      border: 0;
+      border: 1px solid #dbd9d9;
+      border-radius: 3px;
+      padding: 1px 13px;
+      margin: 0 0 10px;
+      color: #434343;
+      font-weight: 300;
+      outline: 0;
+      box-shadow: none;
+      -webkit-appearance: none;
+      -webkit-transition: height, border, 0.25s linear;
+      transition: height, border, 0.25s linear; }
+    .form fieldset input:focus {
+      height: 55px;
+      border: 1px solid #a8a8a8; }
+  .form footer {
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 0 42px 0;
+    background: #f0f0f0;
+    border-radius: 0 0 8px 8px; }
+    .form footer button {
+      letter-spacing: 3px;
+      margin: 0;
+      color: #fff;
+      background: #2ecc95;
+      font: normal normal 200 1em/100% "Raleway", Helvetica, sans-serif;
+      text-align: center;
+      border-radius: 2px;
+      border: none;
+      outline: 0;
+      width: 75%;
+      text-transform: uppercase;
+      padding: 16px 0;
+      font-size: 16px;
+      cursor: pointer;
+      -webkit-transition: background-color 0.25s linear;
+      transition: background-color 0.25s linear; }
+    .form footer button:active,
+    .form footer button:hover {
+      background-color: #2bbf8b; }
+
+/* ---------- MEDIA QUERIE TABLET & HIGHER ---------- */
+@media (min-width: 736px) {
+  .content {
+    width: 487px;
+    top: 50%;
+    left: 50%;
+    margin-top: -191.5px;
+    margin-left: -243.5px;
+    -webkit-transition: margin-top 0.25s linear;
+    transition: margin-top 0.25s linear; }
+
+  .content.acitve {
+    margin-top: -246.25px; }
+
+  .form header {
+    padding: 35px 0 35px;
+    border-radius: 2px; }
+  .form .form-wrap {
+    border-radius: 2px; }
+  .form .title {
+    padding: 30px 0 0 0; }
+  .form fieldset {
+    padding: 20px 42px 0; }
+  .form footer button {
+    width: 50%; }
+  .form .login-form header {
+    border-radius: 3px 3px 0 0; }
+  .form .login-form .form-wrap {
+    border-radius: 0 0 3px 3px; } }
+
+/*# sourceMappingURL=style.css.map */
